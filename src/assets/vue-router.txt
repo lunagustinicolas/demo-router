@@ -1,0 +1,37 @@
+VUE ROUTER es una libreria de vue js. Es un sistema para crear rutas.
+
+Vue permite crear paginas SPA. En donde el usuario tiene la sensacion de estar navegando por varias paginas pero lo que de verdad ocurre es que  Vue por debajo esta cambiando el html sin tener que recargar la pagina.
+En un archivo js configuramos las rutas que queremos crear y las asociamos a componentes que cargaron cuando el usuario navegue a la ruta.
+
+
+Navegar desde componentes a componentes
+---------------------------------------
+Podemos navergar utilizando el path o el name.
+<router-link to="/about"><router-link/>
+<router-link :to="{name: "nameQueLePuse"}"><router-link/>
+O
+this.$router.push('home')
+this.$router.push({ name: 'home' })
+
+Router replace vs Router push
+-----------------------------
+this.$router.replace('home')
+*Con router replace el usuario al pulsar sobre el enlace no podrá volver a la página anterior. 
+
+
+
+*Detalles : si tiene path ignora params
+
+
+
+Redirect :
+
+path: "/sd"
+redirect: "/jobs"
+
+
+Catchall 404
+
+path: "/:catchAll(.*)",
+name
+component
