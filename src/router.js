@@ -1,18 +1,16 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-//import PrimerPaso from './components/PrimerPaso.vue';
+import PrimerPaso from './components/PrimerPaso.vue';
 import SegundoPaso from './components/SegundoPaso.vue';
 import UltimoPaso from './components/UltimoPaso.vue';
-import uno from './components/Uno.vue';
 
 Vue.use(Router);
 
 export default new Router({
-    routes: [
-        {
+    routes: [{
             path: '/',
             name: 'primerPaso',
-            component: uno
+            component: PrimerPaso
         },
         {
             path: '/segundo-paso/:nombre/:apellido',
@@ -25,9 +23,7 @@ export default new Router({
             component: UltimoPaso
         },
     ],
-   scrollBehavior() {
-        return {x: 0, y: 0}
+    scrollBehavior() {
+        return { x: 0, y: 0 }
     }
 });
-
-
