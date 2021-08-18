@@ -1,8 +1,7 @@
 <template>
   <div>
       <p>
-          Estas registrado {{$route.params.nombre}} {{$route.params.apellido}} <br>
-          Dni: {{$route.params.dni}}
+ULTIMO
       </p>
   </div>
 </template>
