@@ -8,11 +8,7 @@
 
 <script>
 export default {
-  data() {
-    return {
-        dni: "",
-    };
-  },
+
 };
 </script>
 

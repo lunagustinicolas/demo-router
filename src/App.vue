@@ -1,16 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <div>
+      <router-link to="/">UNO</router-link>
+    </div>
+    <div>
+      <router-link to="/segundo-paso">DOS</router-link>
+    </div>
+    <div>
+      <router-link to="/ultimo-paso">ULTIMO</router-link>
+    </div>
+    <!--<router-link :to="{ path: '/segundo-paso'}">Siguiente</router-link> -->
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-
 export default {
-  components: {
-  }
-}
+  components: {},
+};
 </script>
 
 <style>
