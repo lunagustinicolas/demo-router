@@ -23,7 +23,4 @@ export default new Router({
             component: UltimoPaso
         },
     ],
-    scrollBehavior() {
-        return { x: 0, y: 0 }
-    }
 });
