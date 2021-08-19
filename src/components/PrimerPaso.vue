@@ -4,7 +4,7 @@
     <input type="text" v-model="apellido" />
 
     <div>
-        <router-link :to="{ path: '/segundo-paso/' + nombre + '/' + apellido, query: { s: 23, as:2}}">Siguiente</router-link>
+        <router-link :to="{ path: '/segundo-paso/' + nombre + '/' + apellido}">Siguiente</router-link>
     </div>
   </div>
 </template>
